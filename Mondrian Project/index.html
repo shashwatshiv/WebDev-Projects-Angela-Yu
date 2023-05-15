@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .grid-container {
+        height: 748px;
+        width: 748px;
+        display: grid;
+        background-color: black;
+        grid-template-rows: 414px 130px 155px 22px;
+        grid-template-columns: 320px 198px 153px 50px;
+        gap: 9px;
+      }
+      .red {
+        background-color: red;
+        grid-row: 1/1;
+      }
+      .white {
+        background-color: #f0f1ec;
+      }
+      .item2 {
+        grid-column: 2 /5;
+      }
+      .item3 {
+        grid-area: 2/1/4/2;
+      }
+      .item4 {
+        grid-area: 2/2/4/4;
+      }
+      .blue {
+        background-color: #004592;
+        border: solid black;
+        border-width: 0px 0px 10px 0px;
+        grid-area: 2/4/3/5;
+      }
+      .item6 {
+        grid-area: 3/4/5/5;
+      }
+      .yellow {
+        background-color: #f9d01e;
+      }
+      .black {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="flex-container">
+      <div class="grid-container">
+        <div class="red item"></div>
+        <div class="white item2 item"></div>
+        <div class="white item3"></div>
+        <div class="white item4"></div>
+        <div class="blue"></div>
+        <div class="white item6"></div>
+        <div class="white item7"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+    </div>
+  </body>
+</html>
